@@ -20,12 +20,13 @@ function searchOrder() {
             receiverName: "Trần Thị B",
             receiverPhone: "0987654322",
             receiverAddress: "Số 10, Đường ABC, Quận XYZ, Hà Nội",
-            status: "đã hoàn thành",
             sendDate: "2023-05-21",
+            quantity: "1 túi",
+            cod: "1.750.000 vnđ",
             vehicle: {
-                name: "Xe tải A",
-                licensePlate: "79A-12345",
-                phone: "0987654321"
+                name: "Bắc Sơn",
+                licensePlate: "26A-12345",
+                phone: "0972090059"
             },
             route: {
                 startLocation: "Bx Mộc Châu",
@@ -41,11 +42,12 @@ function searchOrder() {
             receiverName: "Lê Thị D",
             receiverPhone: "0987654323",
             receiverAddress: "Số 20, Đường XYZ, Quận ABC, Hà Nội",
-            status: "đã hoàn thành",
             sendDate: "2023-05-22",
+            quantity: "2 hộp",
+            cod: "2.500.000 vnđ",
             vehicle: {
-                name: "Xe tải B",
-                licensePlate: "79B-67890",
+                name: "Duy Hồng",
+                licensePlate: "26B-67890",
                 phone: "0976543210"
             },
             route: {
@@ -62,12 +64,13 @@ function searchOrder() {
             receiverName: "Trần Thị F",
             receiverPhone: "0987654325",
             receiverAddress: "Số 30, Đường DEF, Quận GHI, Hà Nội",
-            status: "đã hoàn thành",
             sendDate: "2023-05-23",
+            quantity: "3 thùng",
+            cod: "3.750.000 vnđ",
             vehicle: {
-                name: "Xe tải C",
-                licensePlate: "79C-54321",
-                phone: "0976543211"
+                name: "Duy Hồng",
+                licensePlate: "26C-54321",
+                phone: ":0972090059"
             },
             route: {
                 startLocation: "Bx Miền Đông",
@@ -109,14 +112,14 @@ function searchOrder() {
                             <p><strong>Số điện thoại:</strong> <a href="tel:${order.receiverPhone}">${order.receiverPhone}</a></p>
                             <p><strong>Địa chỉ:</strong> ${order.receiverAddress}</p>
                         </div>
-                        <h3>Trạng thái</h3>
-                        <div class="info-section status">
-                            <p><strong>Trạng thái:</strong> ${order.status}</p>
-                            <span class="status-icon">&#10003;</span>
+                        <h3>Đơn hàng</h3>
+                        <div class="info-section">
+                            <p><strong>Số lượng:</strong> ${order.quantity}</p>
+                            <p><strong>Thu hộ:</strong> ${order.cod}</p>
                         </div>
                         <h3>Nhà xe</h3>
                         <div class="info-section">
-                            <p><strong>Tên xe:</strong> ${order.vehicle.name}</p>
+                            <p><strong>Tên nhà xe:</strong> ${order.vehicle.name}</p>
                             <p><strong>Biển số xe:</strong> ${order.vehicle.licensePlate}</p>
                             <p><strong>Số điện thoại:</strong> <a href="tel:${order.vehicle.phone}">${order.vehicle.phone}</a></p>
                         </div>
